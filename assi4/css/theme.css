@@ -1,0 +1,86 @@
+:root {
+  --green: #0F6B5F;
+  --orange: #F2A93B;
+  --dark: #16302B;
+  --bg: #F4F7F5;
+  --line: #E6EFEC;
+  --field-border: #d3e0dc;
+}
+
+body {
+  font-family: "Montserrat", system-ui, sans-serif;
+  color: var(--dark);
+  background-color: var(--line);
+  min-height: 100vh;
+}
+.card-form {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(22, 48, 43, 0.15);
+}
+.card-form-head {
+  background: var(--green);
+  color: #fff;
+  padding: 1.5rem;
+}
+.card-form-head h1 { font-weight: 700; }
+.card-form-head p { opacity: 0.85; }
+.card-form-body { padding: 1.5rem; }
+@media (min-width: 768px) {
+  .card-form-head { padding: 1.75rem 2.5rem; }
+  .card-form-body { padding: 2.5rem; }
+}
+.form-label,
+.card-form-body legend {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.card-form-body legend {
+  float: none;
+  width: auto;
+}
+.form-text { font-size: 0.75rem; }
+.form-check-label { font-size: 0.85rem; }
+.form-control,
+.form-select {
+  background-color: var(--bg);
+  border: 1px solid var(--field-border);
+  border-radius: 12px;
+  color: var(--dark);
+  font-size: 0.85rem;
+}
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--bg);
+  color: var(--dark);
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.2);
+}
+.form-control::placeholder { color: #8da19b; }
+.form-check-input { border-color: #9db3ad; }
+.form-check-input:checked {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+.form-check-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.25);
+}
+
+.btn-main {
+  background: var(--orange);
+  border: 2px solid var(--orange);
+  border-radius: 999px;
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.7rem 1.75rem;
+}
+.btn-main:hover,
+.btn-main:focus-visible {
+  background: #e29a2c;
+  border-color: #e29a2c;
+  color: var(--dark);
+}

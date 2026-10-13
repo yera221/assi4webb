@@ -1,0 +1,30 @@
+.form-control:user-invalid,
+.form-select:user-invalid {
+  border-color: #dc3545;
+}
+.form-control:user-invalid:focus,
+.form-select:user-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+.form-control:user-invalid ~ .invalid-feedback,
+.form-select:user-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.form-control:user-valid,
+.form-select:user-valid {
+  border-color: #198754;
+}
+.form-check-input:user-invalid {
+  border-color: #dc3545;
+}
+.form-check-input:user-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.radio-group:has(input:user-invalid) .invalid-feedback {
+  display: block;
+}
+.radio-group:has(input:user-invalid) .form-check-input {
+  border-color: #dc3545;
+}
